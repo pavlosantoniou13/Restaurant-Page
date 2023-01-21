@@ -1,7 +1,6 @@
-const content = document.querySelector(".content")
-const card = document.querySelector(".card")
 
-function clearBox(){
+
+function clearBox(content, card){
     content.removeChild(card)
 }
 

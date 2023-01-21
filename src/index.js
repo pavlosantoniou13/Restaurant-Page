@@ -6,13 +6,11 @@ const content = document.querySelector(".content")
 const menuBtn = document.querySelector(".menu")
 const homeBtn = document.querySelector(".home")
 const card = document.querySelector(".card")
-const card1 = document.querySelector("card1")
-const contentItem = content.children[0]
 pageLoad()
 
 
 homeBtn.addEventListener("click", () => {
-  content.replaceChild(pageLoad,pageLoad)
+  clearBox(content, card)
     pageLoad()
     
 })
@@ -20,7 +18,8 @@ homeBtn.addEventListener("click", () => {
 
 
 menuBtn.addEventListener("click", () => {
-   
+   clearBox()
+   menu()
     
     
 })
