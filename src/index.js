@@ -5,11 +5,12 @@ import replace from "./replace-content";
 const content = document.querySelector(".content")
 const menuBtn = document.querySelector(".menu")
 const homeBtn = document.querySelector(".home")
-const card = document.querySelector(".card")
 pageLoad()
 
 
 homeBtn.addEventListener("click", () => {
+  // move the card declaration here
+  const card = document.querySelector(".card")
   clearBox(content, card)
     pageLoad()
     
@@ -18,9 +19,8 @@ homeBtn.addEventListener("click", () => {
 
 
 menuBtn.addEventListener("click", () => {
-   clearBox()
-   menu()
-    
-    
+  // and moved the card declaration here
+  const card = document.querySelector(".card")
+  clearBox(content, card)
+  menu()
 })
-
