@@ -1,7 +1,7 @@
 
 
-function clearBox(content, card){
-    content.removeChild(card)
+function clearBox(content, container){
+    content.removeChild(container)
 }
 
 export default clearBox
